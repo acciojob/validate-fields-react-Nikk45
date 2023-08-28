@@ -24,9 +24,9 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <label>Username:</label>
-        <input id={!user && 'errorMessage'} type="text" value={user} onChange={(e)=>setUser(e.target.value)}/><br />
+        <input type="text" value={user} onChange={(e)=>setUser(e.target.value)}/><br />
         <label>Password:</label>
-        <input id={!password && 'errorMessage'} type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+        <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
         {
           warning ? <p id="errorMessage">Both username and password are required</p> : ''
         }
