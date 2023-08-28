@@ -14,6 +14,12 @@ const App = () => {
     if(!user && !password){
       setWarning(true)
     }
+    else if(!user){
+      setWarning(true)
+    }
+    else if(!password){
+      setWarning(true)
+    }
     else
     setWarning(false)
     setPassword('')
